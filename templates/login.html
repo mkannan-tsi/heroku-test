@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MyPlanet by Planet Financial Group</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <link href="../static/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../static/layout/styles/admin-lte.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../static/layout/styles/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<script>
+        var declared_domain = 'mkannan';
+        document.domain = declared_domain;
+</script>
+
+<body class="hold-transition login-page">
+    <div class="login-box">
+        <div class="login-logo">
+            <p style="font-size:10pt; color:red"> {{ message }} </p>
+            <a href="/MyPlanetFinancial/">Welcome to <b>MyPlanet</b></a>
+            <p style="font-size:10pt; color:#fff"> by Planet Financial Group  </p>
+        </div>
+        <div class="login-box-body">
+            <p class="login-box-msg">Sign in to start your session</p>
+<form action="{{ url_for('loginAction') }}" method="post" role="form"><input name="__RequestVerificationToken" type="hidden" value="bRSPDSVhS4Xt2oHmSMjbcPwPDUcq8ipdWvyR-wiXw9VqQTpevc4J6HPfDvjWwy9OUOjubn7_U5sXB2ylvv0jfwdJsmhb4PEbVa_872uaSz41" />                <div class="form-group has-feedback">
+                    <input class="form-control" data-val="true" data-val-email="The Email field is not a valid e-mail address." data-val-required="The Email field is required." id="inputName" name="inputName" placeholder="Email" type="email" value="" />
+                    <span class="field-validation-valid text-danger" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                    <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                    <input class="form-control" data-val="true" data-val-required="The Password field is required." id="inputPassword" name="inputPassword" placeholder="Password" type="password" />
+                    <span class="field-validation-valid text-danger" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                    <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+                    </div>
+                </div>
+</form>            
+        </div>
+        <br>
+<!--         <div class="login-box-body">
+            <p class="login-box-msg">Enter the credentials below</p>
+            <p class="login-box-msg">Username: mkannan@tableau.com</p>
+            <p class="login-box-msg">Password: abcd1234</p>
+        </div> -->
+    </div>
+
+    <script src="../static/js/jquery-3.2.1.min.js"></script>
+
+    <script src="../static/js/bootstrap.js"></script>
+
+    <script src="../static/js/icheck.js"></script>
+
+    <script src="../static/js/jquery.validate.js"></script>
+
+    <script src="../static/js/Login.js"></script>
+
+
+</body>
+</html>
